@@ -30,8 +30,8 @@ export default async function fetchEPG(channels) {
                 .then(async json => {
                     const weekday = DateTime.now().setLocale("it").localWeekday - 1;
                     epg[channels[channel]] = [...epg[channels[channel]], ...Object.keys(json.result.days).filter((el, index) => index >= weekday).concat(Object.keys(json.result.days).filter((el, index) => index < weekday)).flatMap(el => json.result.days[el]).flatMap(entry => {
-                        let startTime = DateTime.fromFormat(`${entry.date} ${entry.hour_start}`, "yyyy-MM-dd HH:mm").setZone("Europe/Rome").minus({ hours: 2 });
-                        let endTime = DateTime.fromFormat(`${entry.date} ${entry.hour_end}`, "yyyy-MM-dd HH:mm").setZone("Europe/Rome").minus({ hours: 2 });
+                        let startTime = DateTime.fromFormat(`${entry.date} ${entry.hour_start}`, "yyyy-MM-dd HH:mm", { zone: "Europe/Rome" });
+                        let endTime = DateTime.fromFormat(`${entry.date} ${entry.hour_end}`, "yyyy-MM-dd HH:mm", { zone: "Europe/Rome" });
                         if (endTime.hour === 23 && endTime.minute === 59) endTime = DateTime.fromFormat(entry.date, "yyyy-MM-dd").setZone("Europe/Rome").startOf("day").plus({ days: 1 });
 
                         let name;

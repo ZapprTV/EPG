@@ -13,7 +13,8 @@ export default async function fetchEPG(channels) {
                 .then(response => response.json())
                 .then(json => {
                     epg[channels[channel]] = [...epg[channels[channel]], ...json.events.flatMap(entry => {
-                        const startTime = DateTime.fromFormat(`${entry.date} ${entry.hour}`, "dd/MM/yyyy HH:mm").setZone("Europe/Rome").minus({ hours: 1 });
+                        const startTime = DateTime.fromFormat(`${entry.date} ${entry.hour}`, "dd/MM/yyyy HH:mm", { zone: "Europe/Rome" });
+                        console.log(entry.name, startTime.toFormat("HH:mm"))
                         const endTime = startTime.plus({ hours: entry.duration.trim().split(":")[0], minutes: entry.duration.trim().split(":")[1], seconds: entry.duration.trim().split(":")[2] });
                         const today = DateTime.now().setZone("Europe/Rome").startOf("day");
                         if (today.ts <= endTime.ts) {

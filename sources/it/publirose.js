@@ -25,7 +25,7 @@ export default async function fetchEPG(channels) {
         } else {
             epg[channels[channel]] = [];
             for (const daysToAdd in [...Array(8).keys()]) {
-                const day = DateTime.now().plus({ days: daysToAdd }).toUTC().startOf("day");
+                const day = DateTime.now({ zone: "Europe/Rome" }).plus({ days: daysToAdd }).toUTC().startOf("day");
                 const date = day.toSeconds();
                 log("generating", { source: "publirose", channel: channels[channel], day: date });
                 await fetch(`https://www.publirose.it/wp2/wp-admin/admin-ajax.php`, {

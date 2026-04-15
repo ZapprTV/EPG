@@ -17,8 +17,8 @@ export default async function fetchEPG(channels) {
                     channel.events.flatMap(entry => {
                         if (lastEventID != entry.id) {
                             lastEventID = entry.id;
-                            const startTime = DateTime.fromFormat(entry.date_start, "dd-MM-yyyy HH:mm").setZone("Europe/Rome").minus({ hours: 2 });
-                            const endTime = DateTime.fromFormat(entry.date_end, "dd-MM-yyyy HH:mm").setZone("Europe/Rome").minus({ hours: 2 });
+                            const startTime = DateTime.fromFormat(entry.date_start, "dd-MM-yyyy HH:mm", { zone: "Europe/Rome" });
+                            const endTime = DateTime.fromFormat(entry.date_end, "dd-MM-yyyy HH:mm", { zone: "Europe/Rome" });
                             
                             let result = {
                                 name: entry.program.title,
