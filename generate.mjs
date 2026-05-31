@@ -54,4 +54,3 @@ const generate = async (list, language = "it") => {
 };
 
 await generate("it/dtt");
-await generate("uk/freeview", "en");
