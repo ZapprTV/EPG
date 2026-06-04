@@ -7,7 +7,7 @@ import oggiintv from "../../../../sources/it/oggiintv";
 import publirose from "../../../../sources/it/publirose";
 
 export default {
-    tdbnet: { fetch: tdbnet, channels: ["A3", "RV"] },
+    tdbnet: { fetch: tdbnet, channels: ["A3", "RV", "TNE"] },
     uvotv: { fetch: uvotv, channels: ["Telepadova - 7 GOLD_it", "TELECOLOR.tvprofil_it"] },
     blue: { fetch: blue, channels: [2057] },
     videomedia: { fetch: videomedia, channels: ["C", "E"] },
