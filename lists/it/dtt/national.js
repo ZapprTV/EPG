@@ -8,10 +8,10 @@ import sky from "../../../sources/it/sky";
 import publirose from "../../../sources/it/publirose";
 import cusano from "../../../sources/it/cusano";
 import superguidatv from "../../../sources/it/superguidatv";
-import samsungtvplus from "../../../sources/it/samsungtvplus";
+import samsungtvplus from "../../../sources/samsungtvplus";
 import set from "../../../sources/it/set";
 import digitalbitrate from "../../../sources/it/digitalbitrate";
-import plutotv from "../../../sources/it/plutotv";
+import plutotv from "../../../sources/plutotv";
 
 export default {
     raiplay: { fetch: raiplay, channels: ["rai-1", "rai-2", "rai-3", "rai-4", "rai-5", "rai-movie", "rai-premium", "rai-gulp", "rai-yoyo", "rai-news-24", "rai-storia", "rai-scuola", "rai-sport", "rai-radio-2"] },
@@ -24,8 +24,8 @@ export default {
     publirose: { fetch: publirose, channels: ["telecampione"] },
     cusano: { fetch: cusano, channels: ["canale122", "radiocusanocampus"] },
     superguidatv: { fetch: superguidatv, channels: [242, 1284191387, 464] },
-    samsungtvplus: { fetch: samsungtvplus, channels: ["*"] },
+    samsungtvplus: { fetch: samsungtvplus, channels: ["it"] },
     set: { fetch: set, channels: ["italiachannel", "padrepiotv", "fascinotv", "radioroma", "rtr99", "radioradio"] },
     digitalbitrate: { fetch: digitalbitrate, channels: ["tlu/TLU_CH22_2010", "tca/TCA_CH32_9807"] },
-    plutotv: { fetch: plutotv, channels: ["*"] }
+    plutotv: { fetch: plutotv, channels: ["it"] }
 };
