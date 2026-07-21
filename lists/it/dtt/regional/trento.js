@@ -1,5 +1,5 @@
 import uvotv from "../../../../sources/it/uvotv";
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import tdbnet from "../../../../sources/it/tdbnet";
 import tv33 from "../../../../sources/it/tv33";
 import ètv from "../../../../sources/it/ètv";

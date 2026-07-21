@@ -1,5 +1,5 @@
 import raiplay from "../../../sources/it/raiplay";
-import blue from "../../../sources/it/blue";
+import blue from "../../../sources/blue";
 import uvotv from "../../../sources/it/uvotv";
 import mediaset from "../../../sources/it/mediaset";
 import raiplaysound from "../../../sources/it/raiplaysound";

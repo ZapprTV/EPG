@@ -1,4 +1,4 @@
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import digitalbitrate from "../../../../sources/it/digitalbitrate";
 import uvotv from "../../../../sources/it/uvotv";
 import tv33 from "../../../../sources/it/tv33";

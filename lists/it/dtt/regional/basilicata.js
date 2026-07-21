@@ -1,5 +1,5 @@
 import norba from "../../../../sources/it/norba";
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import sky from "../../../../sources/it/sky";
 import uvotv from "../../../../sources/it/uvotv";
 import oggiintv from "../../../../sources/it/oggiintv";

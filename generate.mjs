@@ -13,7 +13,7 @@ const generate = async (list, language = "it") => {
             const { fetch, channels } = nationalSources.default[source];
             nationalEPG[source] = await fetch(channels);
         } catch (e) {
-            console.error(`Failed fetching EPG from ${source}: ${e.message}`);
+            console.error(`Failed fetching EPG from ${source}: ${e.stack}`);
             nationalEPG[source] = [];
         };
     };
@@ -54,3 +54,4 @@ const generate = async (list, language = "it") => {
 };
 
 await generate("it/dtt");
+await generate("fr/tnt");

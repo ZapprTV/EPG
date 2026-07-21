@@ -1,5 +1,5 @@
 import digitalbitrate from "../../../../sources/it/digitalbitrate";
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import lacplay from "../../../../sources/it/lacplay";
 import uvotv from "../../../../sources/it/uvotv";
 import publirose from "../../../../sources/it/publirose";

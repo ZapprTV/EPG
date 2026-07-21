@@ -1,6 +1,6 @@
 import uvotv from "../../../../sources/it/uvotv";
 import videomedia from "../../../../sources/it/videomedia";
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import tv33 from "../../../../sources/it/tv33";
 import ètv from "../../../../sources/it/ètv";
 import softwarecreation from "../../../../sources/it/softwarecreation";

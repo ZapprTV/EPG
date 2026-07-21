@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-import log from "../../utils/logger";
+import log from "../utils/logger";
 import { merge } from "lodash";
 import fs from "fs/promises";
 import path from "path";

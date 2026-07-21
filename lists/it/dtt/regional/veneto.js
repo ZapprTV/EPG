@@ -1,6 +1,6 @@
 import tdbnet from "../../../../sources/it/tdbnet";
 import uvotv from "../../../../sources/it/uvotv";
-import blue from "../../../../sources/it/blue";
+import blue from "../../../../sources/blue";
 import videomedia from "../../../../sources/it/videomedia";
 import softwarecreation from "../../../../sources/it/softwarecreation";
 import oggiintv from "../../../../sources/it/oggiintv";
